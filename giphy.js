@@ -11,7 +11,7 @@ $(document).ready(function() { //this is the "JQuery" equivalent of document.add
     addButtons(); 
 
     function addButtons() {
-      for (let i = 0; i < buttonsDiv.length; i++) { //we are trying to confirm if the buttonsDiv[i].id matches the 
+      for (let i = 0; i < buttonsDiv.length; i++) { 
         if (buttonsDiv[i].id === searchValue) {
           return;
         }
@@ -27,7 +27,8 @@ $(document).ready(function() { //this is the "JQuery" equivalent of document.add
   });
 
   function clickItem(event) {
-    const buttonValue = event.target.id; 
+    const buttonValue = event.target.id;
+    console.log(buttonValue) 
     event.preventDefault();
     $("#div3").empty(); //everytime the button is pressed, the div the holds the giphys is cleared. 
     getGiphy(buttonValue);
@@ -39,6 +40,7 @@ $(document).ready(function() { //this is the "JQuery" equivalent of document.add
       url: queryURL,
       method: "get"
     }).then(function(response) {
+      console.log(response.data)
       for (let i = 0; i < response.data.length; i++) { 
         const rating = response.data[i].rating;
         const imageId = response.data[i].id;
