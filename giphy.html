@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Giphy</title>
+    <link rel="stylesheet" href="giphy.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body> 
+    <div class="container" id="div1">
+      <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZS3kRgAOGuVL0ebdo2g8JJbo6s2L_VlLJ0cNGWymmE0q-_TOC' class="d-block" alt="">
+      <form>
+        <div class="form-group">
+        <input type="text" class="form-control" id="search" value='' placeholder="Search for animal">
+        <button class="btn btn-primary btn-lg btn-block"  id="listen" type="submit">Enter</button>
+        </div>
+      </form> 
+    </div>
+    <div class="container" id="div2"></div>
+    <div class="container" id="div3"></div>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">
+    </script>
+    <script src="giphy.js"></script>
+  </body>
+</html>

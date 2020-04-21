@@ -1,0 +1,24 @@
+#search{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.btn{
+    margin-bottom: 20px;
+    
+}
+
+.dynamic{
+    margin-right: 20px;
+}
+
+.d-block{
+    margin-top: 20px;
+    width: 1100px; /*the width and height property will adjust the size of the image on the screen. 'object-fit cover' will adjust the image
+    to take up the desired space on the screen. if u use 'img' and then assign it these or other properties, then any image that will be 
+    appended to the screen will be adjusted because the 'img' take was used in css. it is better to use class or id values to select the 
+    images that you want to adjust with css.*/
+    height: 200px;
+    object-fit: cover;
+}
+
