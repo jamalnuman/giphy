@@ -35,7 +35,7 @@ $(document).ready(function() { //this is the "JQuery" equivalent of document.add
   }
 
   function getGiphy(item) {
-    queryURL = "https://api.giphy.com/v1/gifs/search?q=" + item + "&api_key=qwFFFNV5GdtdNLgyl23TZvqrCFMPbqGj&limit=10";
+    queryURL = "https://api.giphy.com/v1/gifs/search?q=" + item + "&api_key=qwFFFNV5GdtdNLgyl23TZvqrCFMPbqGj&limit=12";
     $.ajax({
       url: queryURL,
       method: "get"
@@ -54,7 +54,7 @@ $(document).ready(function() { //this is the "JQuery" equivalent of document.add
           .attr("data-still", imageStill)
           .attr("data-animate", imageAnimate)
           .attr("data-state", "still");
-        $("#div3").prepend(`Rating: ${rating.toUpperCase()}`);
+        //$("#div3").prepend(`Rating: ${rating.toUpperCase()}`);
         $("#div3").prepend($img);
         $(`#${imageId}`).on("click", function() { //I tried targeting the (.gif) class of the images, but that only allowed this function to work on the odd numbered gifs. this problem was solved by using the gif's imageId. this problem was possibly due to an issue in JS under the hood.  
           const state = $(this).attr("data-state");
