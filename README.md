@@ -1,4 +1,4 @@
 ### Giphy Central 
 
-Fun project that use JQuery and AJAX to obtain the giphys you want. Paste them to the page and then click to animate them.
+Fun project that uses JQuery and AJAX to search giphys by the category you want. You can click on them for animation.
 ![](images/giphys.png)
